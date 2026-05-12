@@ -1,0 +1,67 @@
+<%- include('includes/head') %>
+  <%- include('includes/nav') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
+
+    <div class="col-lg-8 my-3">
+      <h1 class="text-center">Agenda 2026</h1>
+      <p class="text-center lead">Agende conosco atráves dos contatos abaixo.</p>
+
+      <%- include('includes/messages') %>
+
+      <% if(contatos.length > 0) { %>
+      <div class="responsive-table">
+        <table class="table my-3">
+          <% contatos.forEach(contato => { %>
+          <tr>
+            <td><%= contato.nome %></td>
+            <td><%= contato.sobrenome %></td>
+            <td><%= contato.telefone %></td>
+            <td><%= contato.email %></td>
+            <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+            <td><a class="text-danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
+          </tr>
+          <% }); %>
+        </table>
+      </div>
+      <% } else{ %>
+        <p class="text-center lead">Não existem contatos na sua agenda.</p>
+      <% } %>
+  
+    </div>
+
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+    
+<%- include('includes/footer') %>
+
+
+
+    <!-- <tr>
+      <td>Magno</td>
+      <td>V Gomes</td>
+      <td>61992699835</td>
+      <td>magnovgomes74@gmail.com</td>
+
+      <td>Neusa</td>
+      <td>B da Silva</td>
+      <td>61991646596</td>
+      <td>neusatestedasilva@gmail.com</td>
+    </tr>
+
+    <tr>
+      <td>Arthur</td>
+      <td>Lourenço</td>
+      <td>61924242424</td>
+      <td>arthur24@gmail.com</td>
+    </tr>
+    
+    <tr>
+      <td>Isaac</td>
+      <td>Lourenço</td>
+      <td>61999999999</td>
+      <td>isaaclindodovovo@gmail.com</td>
+    </tr> -->

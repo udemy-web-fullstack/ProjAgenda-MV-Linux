@@ -176,8 +176,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* 1. O FUNDO DA PÁGINA */
-body {
+___CSS_LOADER_EXPORT___.push([module.id, `body {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,39 +184,28 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
-  padding: 0;
 }
 
-/* 2. O BLOCO DA AGENDA (Onde ficam os contatos) */
-.container {
-  background-color: rgba(255, 255, 255, 0.95) !important; /* Quase branco total para dar leitura */
-  padding: 30px;
+.content-box {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  padding: 40px;
   border-radius: 20px;
   box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: #000 !important; /* Texto principal em PRETO */
+  color: #000 !important;
 }
 
-/* 3. FORÇAR TEXTOS E TABELAS A APARECEREM */
-.container h1, 
-.container h2, 
-.container p, 
-.container label,
-.table {
-  color: #000 !important; /* Garante que Roberto, Neusa e Magno fiquem pretos */
+.content-box h1, 
+.content-box p, 
+.content-box table, 
+.content-box td {
+  color: #000 !important;
 }
 
-/* 4. AJUSTE DAS BORDAS DA TABELA */
-.table {
-  border-collapse: separate;
-  border-spacing: 0 10px;
+.navbar {
+  margin-bottom: 0 !important;
 }
 
-.table thead th {
-  border-bottom: 2px solid #333 !important;
-}
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA,yBAAyB;AACzB;EACE,oEAAmD;EACnD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;EACjB,SAAS;EACT,UAAU;AACZ;;AAEA,kDAAkD;AAClD;EACE,sDAAsD,EAAE,wCAAwC;EAChG,aAAa;EACb,mBAAmB;EACnB,4CAA4C;EAC5C,gBAAgB;EAChB,mBAAmB;EACnB,sBAAsB,EAAE,6BAA6B;AACvD;;AAEA,4CAA4C;AAC5C;;;;;EAKE,sBAAsB,EAAE,qDAAqD;AAC/E;;AAEA,mCAAmC;AACnC;EACE,yBAAyB;EACzB,sBAAsB;AACxB;;AAEA;EACE,wCAAwC;AAC1C","sourcesContent":["/* 1. O FUNDO DA PÁGINA */\r\nbody {\r\n  background-image: url('../img/img1.jpg') !important;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n/* 2. O BLOCO DA AGENDA (Onde ficam os contatos) */\r\n.container {\r\n  background-color: rgba(255, 255, 255, 0.95) !important; /* Quase branco total para dar leitura */\r\n  padding: 30px;\r\n  border-radius: 20px;\r\n  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);\r\n  margin-top: 50px;\r\n  margin-bottom: 50px;\r\n  color: #000 !important; /* Texto principal em PRETO */\r\n}\r\n\r\n/* 3. FORÇAR TEXTOS E TABELAS A APARECEREM */\r\n.container h1, \r\n.container h2, \r\n.container p, \r\n.container label,\r\n.table {\r\n  color: #000 !important; /* Garante que Roberto, Neusa e Magno fiquem pretos */\r\n}\r\n\r\n/* 4. AJUSTE DAS BORDAS DA TABELA */\r\n.table {\r\n  border-collapse: separate;\r\n  border-spacing: 0 10px;\r\n}\r\n\r\n.table thead th {\r\n  border-bottom: 2px solid #333 !important;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD;EACnD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;EACjB,SAAS;AACX;;AAEA;EACE,sDAAsD;EACtD,aAAa;EACb,mBAAmB;EACnB,4CAA4C;EAC5C,sBAAsB;AACxB;;AAEA;;;;EAIE,sBAAsB;AACxB;;AAEA;EACE,2BAA2B;AAC7B","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n  margin: 0;\r\n}\r\n\r\n.content-box {\r\n  background-color: rgba(255, 255, 255, 0.95) !important;\r\n  padding: 40px;\r\n  border-radius: 20px;\r\n  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);\r\n  color: #000 !important;\r\n}\r\n\r\n.content-box h1, \r\n.content-box p, \r\n.content-box table, \r\n.content-box td {\r\n  color: #000 !important;\r\n}\r\n\r\n.navbar {\r\n  margin-bottom: 0 !important;\r\n}\r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -176,34 +176,48 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) !important; /* O !important garante que nada sobressaia */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */
-}
-
-/* Isso vai deixar o fundo da sua agenda levemente branco e legível */
-.container {
-  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* Ajuste do Body para a imagem não ficar "pulando" */
+___CSS_LOADER_EXPORT___.push([module.id, `/* 1. O FUNDO DA PÁGINA */
 body {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD,EAAE,6CAA6C;EAClG,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB,EAAE,0EAA0E;AAC/F;;AAEA,qEAAqE;AACrE;EACE,0CAA0C,EAAE,gCAAgC;EAC5E,aAAa;EACb,mBAAmB;EACnB,4CAA4C,EAAE,kCAAkC;EAChF,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,qDAAqD;AACrD;EACE,yDAAwC;EACxC,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;AACnB","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important; /* O !important garante que nada sobressaia */\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */\r\n}\r\n\r\n/* Isso vai deixar o fundo da sua agenda levemente branco e legível */\r\n.container {\r\n  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */\r\n  padding: 40px;\r\n  border-radius: 15px;\r\n  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */\r\n  margin-top: 50px;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n/* Ajuste do Body para a imagem não ficar \"pulando\" */\r\nbody {\r\n  background-image: url('../img/img1.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n}"],"sourceRoot":""}]);
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. O BLOCO DA AGENDA (Onde ficam os contatos) */
+.container {
+  background-color: rgba(255, 255, 255, 0.95) !important; /* Quase branco total para dar leitura */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000 !important; /* Texto principal em PRETO */
+}
+
+/* 3. FORÇAR TEXTOS E TABELAS A APARECEREM */
+.container h1, 
+.container h2, 
+.container p, 
+.container label,
+.table {
+  color: #000 !important; /* Garante que Roberto, Neusa e Magno fiquem pretos */
+}
+
+/* 4. AJUSTE DAS BORDAS DA TABELA */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table thead th {
+  border-bottom: 2px solid #333 !important;
+}
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA,yBAAyB;AACzB;EACE,oEAAmD;EACnD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;EACjB,SAAS;EACT,UAAU;AACZ;;AAEA,kDAAkD;AAClD;EACE,sDAAsD,EAAE,wCAAwC;EAChG,aAAa;EACb,mBAAmB;EACnB,4CAA4C;EAC5C,gBAAgB;EAChB,mBAAmB;EACnB,sBAAsB,EAAE,6BAA6B;AACvD;;AAEA,4CAA4C;AAC5C;;;;;EAKE,sBAAsB,EAAE,qDAAqD;AAC/E;;AAEA,mCAAmC;AACnC;EACE,yBAAyB;EACzB,sBAAsB;AACxB;;AAEA;EACE,wCAAwC;AAC1C","sourcesContent":["/* 1. O FUNDO DA PÁGINA */\r\nbody {\r\n  background-image: url('../img/img1.jpg') !important;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n/* 2. O BLOCO DA AGENDA (Onde ficam os contatos) */\r\n.container {\r\n  background-color: rgba(255, 255, 255, 0.95) !important; /* Quase branco total para dar leitura */\r\n  padding: 30px;\r\n  border-radius: 20px;\r\n  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);\r\n  margin-top: 50px;\r\n  margin-bottom: 50px;\r\n  color: #000 !important; /* Texto principal em PRETO */\r\n}\r\n\r\n/* 3. FORÇAR TEXTOS E TABELAS A APARECEREM */\r\n.container h1, \r\n.container h2, \r\n.container p, \r\n.container label,\r\n.table {\r\n  color: #000 !important; /* Garante que Roberto, Neusa e Magno fiquem pretos */\r\n}\r\n\r\n/* 4. AJUSTE DAS BORDAS DA TABELA */\r\n.table {\r\n  border-collapse: separate;\r\n  border-spacing: 0 10px;\r\n}\r\n\r\n.table thead th {\r\n  border-bottom: 2px solid #333 !important;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

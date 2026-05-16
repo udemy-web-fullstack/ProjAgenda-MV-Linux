@@ -1,28 +1,41 @@
+/* 1. O FUNDO DA PÁGINA */
 body {
-  background-image: url('../img/img1.jpg') !important; /* O !important garante que nada sobressaia */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */
-}
-
-/* Isso vai deixar o fundo da sua agenda levemente branco e legível */
-.container {
-  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-/* Ajuste do Body para a imagem não ficar "pulando" */
-body {
-  background-image: url('../img/img1.jpg');
+  background-image: url('../img/img1.jpg') !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. O BLOCO DA AGENDA (Onde ficam os contatos) */
+.container {
+  background-color: rgba(255, 255, 255, 0.95) !important; /* Quase branco total para dar leitura */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000 !important; /* Texto principal em PRETO */
+}
+
+/* 3. FORÇAR TEXTOS E TABELAS A APARECEREM */
+.container h1, 
+.container h2, 
+.container p, 
+.container label,
+.table {
+  color: #000 !important; /* Garante que Roberto, Neusa e Magno fiquem pretos */
+}
+
+/* 4. AJUSTE DAS BORDAS DA TABELA */
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.table thead th {
+  border-bottom: 2px solid #333 !important;
 }

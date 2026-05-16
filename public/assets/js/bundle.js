@@ -186,9 +186,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 
 .content-box {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   padding: 40px !important;
   border-radius: 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3) !important;
@@ -197,23 +197,35 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 
 .content-box h1, 
+.content-box h2, 
 .content-box p, 
 .content-box table, 
 .content-box label,
 .content-box td,
 .content-box th {
-  color: #fff !important; 
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #333 !important; 
+  text-shadow: none;
 }
 
 .content-box a {
-  color: #fff !important;
+  color: #0056b3 !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-box a:hover {
+  text-decoration: underline;
+}
+
+.content-box a.text-danger {
+  color: #dc3545 !important; 
 }
 
 .navbar {
   margin-bottom: 0 !important;
 }
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD;EACnD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;AACnB;;AAEA;EACE,qDAAqD;EACrD,qCAAqC;EACrC,6CAA6C;EAC7C,wBAAwB;EACxB,mBAAmB;EACnB,uDAAuD;EACvD,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;;;;;;EAME,sBAAsB;EACtB,2CAA2C;AAC7C;;AAEA;EACE,sBAAsB;AACxB;;AAEA;EACE,2BAA2B;AAC7B","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n}\r\n\r\n.content-box {\r\n  background-color: rgba(255, 255, 255, 0.1) !important;\r\n  backdrop-filter: blur(8px) !important;\r\n  -webkit-backdrop-filter: blur(8px) !important;\r\n  padding: 40px !important;\r\n  border-radius: 20px;\r\n  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3) !important;\r\n  margin-top: 30px;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.content-box h1, \r\n.content-box p, \r\n.content-box table, \r\n.content-box label,\r\n.content-box td,\r\n.content-box th {\r\n  color: #fff !important; \r\n  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.content-box a {\r\n  color: #fff !important;\r\n}\r\n\r\n.navbar {\r\n  margin-bottom: 0 !important;\r\n}\r\n"],"sourceRoot":""}]);
+
+`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD;EACnD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;AACnB;;AAEA;EACE,sDAAsD;EACtD,sCAAsC;EACtC,8CAA8C;EAC9C,wBAAwB;EACxB,mBAAmB;EACnB,uDAAuD;EACvD,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;;;;;;;EAOE,sBAAsB;EACtB,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;EACzB,qBAAqB;EACrB,iBAAiB;AACnB;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,2BAA2B;AAC7B","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n}\r\n\r\n.content-box {\r\n  background-color: rgba(255, 255, 255, 0.15) !important;\r\n  backdrop-filter: blur(10px) !important;\r\n  -webkit-backdrop-filter: blur(10px) !important;\r\n  padding: 40px !important;\r\n  border-radius: 20px;\r\n  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3) !important;\r\n  margin-top: 30px;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n.content-box h1, \r\n.content-box h2, \r\n.content-box p, \r\n.content-box table, \r\n.content-box label,\r\n.content-box td,\r\n.content-box th {\r\n  color: #333 !important; \r\n  text-shadow: none;\r\n}\r\n\r\n.content-box a {\r\n  color: #0056b3 !important;\r\n  text-decoration: none;\r\n  font-weight: bold;\r\n}\r\n\r\n.content-box a:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.content-box a.text-danger {\r\n  color: #dc3545 !important; \r\n}\r\n\r\n.navbar {\r\n  margin-bottom: 0 !important;\r\n}\r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

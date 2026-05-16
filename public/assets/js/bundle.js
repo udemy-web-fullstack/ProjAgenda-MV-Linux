@@ -183,7 +183,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */
-}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD,EAAE,6CAA6C;EAClG,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB,EAAE,0EAA0E;AAC/F","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important; /* O !important garante que nada sobressaia */\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */\r\n}"],"sourceRoot":""}]);
+}
+
+/* Isso vai deixar o fundo da sua agenda levemente branco e legível */
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Ajuste do Body para a imagem não ficar "pulando" */
+body {
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAAA;EACE,oEAAmD,EAAE,6CAA6C;EAClG,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB,EAAE,0EAA0E;AAC/F;;AAEA,qEAAqE;AACrE;EACE,0CAA0C,EAAE,gCAAgC;EAC5E,aAAa;EACb,mBAAmB;EACnB,4CAA4C,EAAE,kCAAkC;EAChF,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,qDAAqD;AACrD;EACE,yDAAwC;EACxC,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,4BAA4B;EAC5B,iBAAiB;AACnB","sourcesContent":["body {\r\n  background-image: url('../img/img1.jpg') !important; /* O !important garante que nada sobressaia */\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */\r\n}\r\n\r\n/* Isso vai deixar o fundo da sua agenda levemente branco e legível */\r\n.container {\r\n  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */\r\n  padding: 40px;\r\n  border-radius: 15px;\r\n  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */\r\n  margin-top: 50px;\r\n  margin-bottom: 50px;\r\n}\r\n\r\n/* Ajuste do Body para a imagem não ficar \"pulando\" */\r\nbody {\r\n  background-image: url('../img/img1.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  background-attachment: fixed;\r\n  min-height: 100vh;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

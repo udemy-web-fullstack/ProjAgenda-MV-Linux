@@ -6,3 +6,23 @@ body {
   background-attachment: fixed;
   min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */
 }
+
+/* Isso vai deixar o fundo da sua agenda levemente branco e legível */
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Branco com 90% de opacidade */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para destacar do fundo */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Ajuste do Body para a imagem não ficar "pulando" */
+body {
+  background-image: url('../img/img1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}

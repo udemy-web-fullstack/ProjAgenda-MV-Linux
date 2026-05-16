@@ -1,0 +1,8 @@
+body {
+  background-image: url('../img/img1.jpg') !important; /* O !important garante que nada sobressaia */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh; /* Garante que o fundo cubra a tela toda mesmo se a agenda estiver vazia */
+}
